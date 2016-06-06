@@ -35,7 +35,7 @@ gem 'will_paginate-bootstrap'
 gem 'polish', '>= 0.1.0'
 gem 'googlecharts', '~> 1.6.6'
 gem 'google_contacts_api', '~> 0.5.1'
-gem 'pdfkit', '~> 0.6.2'
+gem 'pdfkit', '~> 0.8.2'
 gem 'premailer-rails'
 gem 'nokogiri', '~> 1.6.7.2'
 gem 'addressable', '~> 2.4'
@@ -47,6 +47,7 @@ gem 'comma', '~> 3.2.1'
 gem 'state_machines-activerecord'
 gem 'appsignal'
 gem 'airbrake', '~> 4.0.0'
+gem 'sentry-raven', '~> 1.0'
 gem 'stripe'
 gem 'stripe_event', '~> 1.3.0'
 gem 'country_select', '~> 1.3.1'
@@ -56,17 +57,18 @@ gem 'identity_cache', '~> 0.2.1'
 gem 'cityhash', '~> 0.8.1'
 gem 'zendesk_api'
 gem 'dalli', '~> 2.7.1'
-gem 'cancancan', '~> 1.9.1'
+gem 'cancancan', '~> 1.13.1'
 gem 'unicorn', '~> 5.0.1'
 gem 'open_uri_redirections', '~> 0.1.4'
 gem 'jwt', '~> 1.5.0'
 gem 'draper', '~> 2.1'
+gem 'draper-cancancan'
 gem 'whois', require: false
 
 gem 'rails-observers', '~> 0.1.2'
 gem 'protected_attributes', '~> 1.0.8'
 
-gem 'wicked', '~> 1.0.2'
+gem 'wicked', '~> 1.3.0'
 gem 'rack-attack', '~> 4.3.1'
 gem 'basecrm'
 gem 'i18n-country-translations', '~> 1.0.2'
@@ -92,7 +94,6 @@ gem 'active_link_to', '~> 1.0.3'
 gem 'rubyzip', require: 'zip'
 gem 'oj'
 
-
 gem 'sanitize'
 gem 'cocoon', '~> 1.2.6'
 gem 'jquery-rails'
@@ -107,6 +108,8 @@ gem 'sidekiq', '4.1.1'
 gem 'sidekiq-oj'
 gem 'redis-objects', '~> 1.0.0'
 gem 'redis-namespace'
+
+
 # keyword extraction
 
 gem 'easy_translate'
@@ -114,6 +117,8 @@ gem 'bloomfilter-rb'
 gem 'unicode'
 
 # trackers
+
+
 gem 'gabba'
 gem 'delighted'
 gem 'ahoy_matey'
@@ -121,7 +126,7 @@ gem 'ahoy_matey'
 # assets
 gem 'sassc-rails'
 gem 'uglifier', '~> 3.0.0'
-gem 'coffee-rails', '~> 4.0.1'
+gem 'coffee-rails', '~> 4.1.1'
 gem 'therubyracer', '~> 0.12.2', require: 'v8'
 gem 'react-rails', '~> 1.5'
 gem 'sprockets-coffee-react', '~> 3.0'
@@ -174,7 +179,6 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'activerecord-import', '~> 0.11.0', require: false
-  
   gem 'active_record_query_trace'
   gem 'rubocop'
 end
