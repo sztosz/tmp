@@ -37,7 +37,7 @@ gem 'googlecharts', '~> 1.6.6'
 gem 'google_contacts_api', '~> 0.5.1'
 gem 'pdfkit', '~> 0.8.2'
 gem 'premailer-rails'
-gem 'nokogiri', '~> 1.6.7.2'
+gem 'nokogiri', '~> 1.6.8'
 gem 'addressable', '~> 2.4'
 gem 'ransack', '1.7.0'
 gem 'groupdate'
@@ -72,14 +72,13 @@ gem 'wicked', '~> 1.3.0'
 gem 'rack-attack', '~> 4.3.1'
 gem 'basecrm'
 gem 'i18n-country-translations', '~> 1.0.2'
-gem 'i18n-js', '>= 3.0.0.rc11'
+gem 'i18n-js', '>= 3.0.0.rc12'
 gem 'whenever', require: false
 gem 'money-rails'
 gem 'google_currency'
-gem 'excon', '~> 0.46'
+gem 'excon', '~> 0.49'
 gem 'rest-client'
 gem 'enumerize'
-
 gem 'PageRankr', '~> 4.2.0'
 gem 'luminati'
 gem 'simpleidn'
@@ -87,7 +86,7 @@ gem 'charlock_holmes'
 gem 'rchardet'
 gem 'paper_trail', '~> 3.0.5'
 gem 'ie_iframe_cookies'
-gem 'browser', '~> 0.7.0'
+gem 'browser', '~> 2.0.0'
 gem 'shopify_api'
 gem 'active_type'
 gem 'active_link_to', '~> 1.0.3'
@@ -108,20 +107,15 @@ gem 'sidekiq', '4.1.1'
 gem 'sidekiq-oj'
 gem 'redis-objects', '~> 1.0.0'
 gem 'redis-namespace'
-
-
 # keyword extraction
-
 gem 'easy_translate'
 gem 'bloomfilter-rb'
 gem 'unicode'
 
 # trackers
-
-
 gem 'gabba'
 gem 'delighted'
-gem 'ahoy_matey'
+gem 'ahoy_matey', '1.4.0'
 
 # assets
 gem 'sassc-rails'
@@ -140,7 +134,7 @@ gem 'grape-appsignal', '~> 0.4.1'
 gem 'her', '~> 0.8.1'
 
 # crawling
-gem 'poltergeist', '~> 1.6.0', require: false
+gem 'poltergeist', '~> 1.9.0', require: false
 gem 'capybara', '2.7.1', require: false
 gem 'typhoeus', '~> 0.7.1'
 
