@@ -8,22 +8,22 @@ gem 'redis', '~> 3.2.2'
 gem 'json', '~> 1.8.1'
 gem 'activesupport-json_encoder', '~> 1.1.0'
 gem 'imgkit', '~> 1.4.1'
-gem 'devise', '3.5.4'
+gem 'devise', '3.5.10'
 gem 'devise-encryptable', '0.2.0'
 gem 'omniauth', '~> 1.2.2'
 gem 'omniauth-google-oauth2', '~> 0.2.6'
 gem 'resque', '~> 1.25.2'
-gem 'resque_mailer', '~> 2.2.6'
+gem 'resque_mailer', '~> 2.3'
 gem 'resque-cleaner', '~> 0.3.0'
 gem 'resque-uniq', '~> 0.0.11'
 gem 'resque-retry', '~> 1.4.0'
 gem 'resque-metrics', '~> 0.1.1'
 gem 'resque-waiting-room', '~> 0.2.3'
-gem 'sinatra', '~> 1.4.3', require: nil
+gem 'sinatra', '~> 1.4.7', require: nil
 gem 'oauth2'
 gem 'legato', '~> 0.7.0'
-gem 'doorkeeper', '~> 2.2.1'
-gem 'geoip', '~> 1.4.0'
+gem 'doorkeeper', '~> 3.1'
+gem 'geoip', '~> 1.6'
 gem 'mechanize'
 gem 'tire', '~> 0.6.2'
 gem 'aws-sdk', '~> 1.49.0'
@@ -46,8 +46,7 @@ gem 'rack-request_police'
 gem 'comma', '~> 3.2.1'
 gem 'state_machines-activerecord'
 gem 'appsignal'
-gem 'airbrake', '~> 4.0.0'
-gem 'sentry-raven', '~> 1.0'
+gem 'sentry-raven', '~> 1.2'
 gem 'stripe'
 gem 'stripe_event', '~> 1.3.0'
 gem 'country_select', '~> 1.3.1'
@@ -71,15 +70,14 @@ gem 'protected_attributes', '~> 1.0.8'
 gem 'wicked', '~> 1.3.0'
 gem 'rack-attack', '~> 4.3.1'
 gem 'basecrm'
-gem 'i18n-country-translations', '~> 1.0.2'
+gem 'i18n-country-translations', '~> 1.2.3'
 gem 'i18n-js', '>= 3.0.0.rc12'
 gem 'whenever', require: false
-gem 'money-rails'
-gem 'google_currency'
+gem 'money-rails', '~> 1.6.1'
+gem 'google_currency', '~> 3.3.0'
 gem 'excon', '~> 0.49'
 gem 'rest-client'
 gem 'enumerize'
-gem 'PageRankr', '~> 4.2.0'
 gem 'luminati'
 gem 'simpleidn'
 gem 'charlock_holmes'
@@ -87,7 +85,7 @@ gem 'rchardet'
 gem 'paper_trail', '~> 3.0.5'
 gem 'ie_iframe_cookies'
 gem 'browser', '~> 2.0.0'
-gem 'shopify_api'
+gem 'shopify_api', '~> 4.3'
 gem 'active_type'
 gem 'active_link_to', '~> 1.0.3'
 gem 'rubyzip', require: 'zip'
@@ -97,7 +95,7 @@ gem 'sanitize'
 gem 'cocoon', '~> 1.2.6'
 gem 'jquery-rails'
 gem 'figaro', '~> 1.1.1'
-gem 'slack-notifier'
+gem 'slack-notifier', '~> 1.5.1'
 gem 'hairtrigger'
 gem 'responders', '~> 2.0'
 gem 'logstasher'
@@ -113,9 +111,10 @@ gem 'bloomfilter-rb'
 gem 'unicode'
 
 # trackers
+
 gem 'gabba'
 gem 'delighted'
-gem 'ahoy_matey', '1.4.0'
+gem 'ahoy_matey', '1.4.2'
 
 # assets
 gem 'sassc-rails'
@@ -136,18 +135,7 @@ gem 'her', '~> 0.8.1'
 # crawling
 gem 'poltergeist', '~> 1.9.0', require: false
 gem 'capybara', '2.7.1', require: false
-gem 'typhoeus', '~> 0.7.1'
-
-group :deployment do
-  gem 'capistrano', '~> 3.5.0'
-  gem 'capistrano-ext'
-  gem 'capistrano-rails', '~> 1.1'
-  gem 'slackistrano', require: false
-  gem 'rvm1-capistrano3', require: false
-  gem 'capistrano3-unicorn', require: false
-  gem 'capistrano-nvm', '~> 0.0.6', require: false
-  gem 'capistrano-figaro-yml', '~> 1.0.2'
-end
+gem 'typhoeus', '~> 1.0.2'
 
 group :development, :test do
   gem 'rspec-rails', '3.4.2'
@@ -156,7 +144,7 @@ group :development, :test do
   gem 'awesome_print', '~> 1.6.1', require: 'ap'
   gem 'byebug'
   gem 'i18n-tasks'
-  gem 'bundler-audit', require: false
+  gem 'parallel_tests', '~> 2.7'
 end
 
 group :development do
@@ -179,18 +167,21 @@ end
 
 group :test do
   gem 'mocha', '~> 1.1.0', require: false
-  gem 'ffaker'
+  gem 'ffaker', '~> 2.2.0'
   gem 'email_spec', '~> 2.0.0'
   gem 'database_cleaner', '~> 1.5.1'
   gem 'shoulda-matchers'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '~> 4.7.0'
   gem 'simplecov', require: false
   gem 'launchy', '~> 2.4.3'
   gem 'resque_spec', '0.17.0'
   gem 'timecop', '~> 0.8.0'
   gem 'webmock', require: false
-  gem 'vcr'
+  gem 'vcr', '~> 3.0.3'
   gem 'fakeredis', '~> 0.5.0', require: 'fakeredis/rspec'
-  gem 'db-query-matchers', '~> 0.4.0'
+  gem 'db-query-matchers', '~> 0.6'
   gem 'stripe_tester'
+  gem "nyan-cat-formatter"
 end
+
+eval_gemfile File.join(File.dirname(__FILE__), 'Gemfile.deploy')
